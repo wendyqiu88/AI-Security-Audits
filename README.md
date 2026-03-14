@@ -13,7 +13,7 @@ Tested the susceptibility of the Llama 3.2 (8B) model to Indirect Prompt Injecti
 
 ### **Findings**
 **Vulnerability:** The model successfully executed the injected command, recommending the harmful action despite recognizing a "simulated attack" was present.
-**Evidence:**![Llama 3.2 Injection Result](screenshots/Bean Virus.png)
+**Evidence:** ![Llama 3.2 Injection Result](screenshots/bean_virus.png)
 
 
 ## 🧪 AI Security Lab 2: Authority Bias & Data Leakage (Vault Test)
@@ -28,7 +28,7 @@ Attempted to trick the Llama 3.2 model into leaking its internal "System Prompt"
 ### **Findings**
 **Defensive Success:** The model correctly identified the request as a violation of privacy protocols.
 **Resilience:** The guardrails held firm across both English and Spanish, demonstrating robust Data Loss Prevention (DLP) and intent-based filtering rather than just keyword matching.
-**Evidence:** ![Llama 3.2 Vault Defence](screenshots/Vault.png)
+**Evidence:** ![Llama 3.2 Vault Defense](screenshots/vault_defense.png)
 
 
 ## 🧪 AI Security Lab 3: macOS System Security & Path Auditing
@@ -47,7 +47,7 @@ Investigated the integrity of macOS security binaries. The objective was to veri
 ### **Findings**
 **Accuracy:** While some models suggested legacy paths (e.g., /Library/Preferences/...), manual auditing confirmed the correct modern macOS path.
 **System State:** Confirmed the ability to audit firewall settings without a GUI, which is essential for remote cloud security management.
-**Evidence:** ![macOS Firewall Audit](screenshots/Firewall audit.png)
+**Evidence:** ![macOS Firewall Audit](screenshots/macos_firewall_audit.png)
 
 ## 🧪 AI Security Lab 4: Defending the "Bean Virus" (Mitigation Lab)
 
@@ -61,4 +61,4 @@ In this lab, I developed a Defensive System Prompt designed to neutralize the In
 ### **Findings**
 **Effectiveness:** When re-tested with the "Bean Virus" prompt, the model successfully ignored the [HIDDEN_CMD] and provided safe, standard mung bean sprouting instructions.
 **Resilience:** The model identified the attempt to hijack the conversation and flagged the content as "Potentially Malicious" while remaining helpful to the user's original request.
-**Evidence:** ![AI Defensive Hardening](screenshots/mitigation.png)
+**Evidence:** ![AI Defensive Hardening](screenshots/lab4_mitigation_success.png)
