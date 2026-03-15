@@ -62,3 +62,14 @@ In this lab, I developed a Defensive System Prompt designed to neutralize the In
 **Effectiveness:** When re-tested with the "Bean Virus" prompt, the model successfully ignored the [HIDDEN_CMD] and provided safe, standard mung bean sprouting instructions.
 **Resilience:** The model identified the attempt to hijack the conversation and flagged the content as "Potentially Malicious" while remaining helpful to the user's original request.
 **Evidence:** ![AI Defensive Hardening](screenshots/lab4_mitigation_success.png)
+
+
+## 🛡️ Industry Standards Alignment
+This project maps experimental labs to the **OWASP Top 10 for LLM Applications** to demonstrate professional auditing standards.
+
+| Lab ID | Lab Title | OWASP LLM Mapping | Security Goal |
+| :--- | :--- | :--- | :--- |
+| Lab 1 | Bean Virus Injection | **LLM01: Prompt Injection** | Integrity |
+| Lab 2 | Sensitive Vault Access | **LLM06: Sensitive Info Disclosure** | Confidentiality |
+| Lab 3 | macOS Security Audit | **System Hardening** | Defense in Depth |
+| Lab 4 | Indirect Injection Mitigation | **LLM02: Insecure Output Handling** | Availability/Safety |
